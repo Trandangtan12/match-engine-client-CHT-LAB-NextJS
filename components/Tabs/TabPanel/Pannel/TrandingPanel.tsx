@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LimitOrderForm from "../../../From/TradingForm/LimitOrderForm";
 import TabPanel from "../TabPanel";
 
 const TrandingPanel = () => {
@@ -47,7 +48,7 @@ const TrandingPanel = () => {
   const formList = [
     {
       id: 1,
-      getForm: () => <h2>HI</h2>,
+      getForm: () => <LimitOrderForm />,
     },
   ];
 

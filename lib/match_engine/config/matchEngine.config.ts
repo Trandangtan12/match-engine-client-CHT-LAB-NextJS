@@ -67,4 +67,11 @@ export class MatchEngineClient {
       .post("", JSON.stringify(data))
       .then((response) => _.get(response, "data", null));
   }
+
+  // Trading
+  getLimitOrder(data: PostData): Promise<Response> {
+    return axiosClient(`${this._apiEndpoint}`)
+      .post("", JSON.stringify(data))
+      .then((response) => _.get(response, "data", null));
+  }
 }
